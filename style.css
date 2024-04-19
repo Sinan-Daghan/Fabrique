@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'JetBrains';
+    src: url('./assets/fonts/JetBrainsMono-Regular.ttf');
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 3vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    all: unset;
+    font-family: JetBrains;
+    cursor: pointer;
+}
+
+a:hover {
+    color: coral;
+}
