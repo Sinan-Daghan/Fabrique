@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'JetBrains';
+    src: url('../../assets/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+}
+
+svg {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.5s;
+}
+
+.playerMove:hover {
+    fill: chocolate;
+}
+
+.infoBar, button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.infoBar {
+    top: 40%;
+}
+
+button {
+    top: 65%;
+    opacity: 0;
+    height: 60px;
+    width: 110px;
+    display: grid;
+    place-content: center;
+    color: white;
+    background-color: black;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+button:hover {
+    border: 4px solid chocolate;
+}
+
+button, span, p {
+    font-family: JetBrains, sans-serif;
+}
+
+svg, span, p {
+    user-select: none;
+}
+
+p {
+    text-decoration: underline;
+}
