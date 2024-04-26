@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+    <main>
+        <section id="container">
+        </section>
+    </main>
+
+    <section id="panel">
+        <p id="info-bar"></p>
+
+        <fieldset>
+            <legend>Enable bot</legend>
+            <label><input id="bot-on" type="radio" name="bot" value="true" checked>on</label>
+            <label><input id="bot-off" type="radio" name="bot" value="false">off</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Starting player</legend>
+            <label><input id="startingPlayerX" type="radio" name="player" value="X" checked>orange</label>
+            <label><input id="startingPlayerO" type="radio" name="player" value="O">green<label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Difficulty</legend>
+            <label for="easy">
+                <input class="btn-difficulty" name="difficulty" type="radio" id="easy" value="1" checked>
+                Easy
+            </label>
+            <label for="medium">
+                <input class="btn-difficulty" name="difficulty" type="radio" id="medium" value="2">
+                Medium
+            </label>
+            <label for="hard">
+                <input class="btn-difficulty" name="difficulty" type="radio" id="hard" value="3">
+                Hard
+            </label>
+        </fieldset>
+
+        <button id="btn-restart">Restart <br> press `r`</button>
+    </section>
+
+</body>
+</html>
